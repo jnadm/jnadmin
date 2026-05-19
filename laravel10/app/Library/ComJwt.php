@@ -9,7 +9,7 @@ use Firebase\JWT\SignatureInvalidException;
 
 class ComJwt
 {
-    //使用HMAC生成信息所使用的密钥
+    //使用HMAC生成信息所使用的密钥111
     private string $key = "SFDI25@#8FG";
     //头部定义
     private array $header = array(
@@ -18,7 +18,7 @@ class ComJwt
     );
     //负载
     public array $payload = array(
-        'iss' => '',         //签发者
+        'iss' => '',         //签发者111
         'aud' => '',         //面向的用户
         'iat' => '',         //签发时间
         'nbf' => '',         //生效时间
